@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Georgia", "ARIAL";
+    src: url("/assets/fonts/Georgia.ttf"), url("/assets/fonts/ARIAL.TTF");
+}
+
+body {
+    background: black;
+    text-align: center;
+    margin: auto;
+    width: 1280px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 60px;
+    position: relative;
+    left: calc(50% - 1204px/2);
+    top: 40px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 110%;
+    color: #F1CDB3;
+}
+
+header h5 {
+    font-family: 'ARIAL', sans-serif;
+    position: relative;
+    padding: 0;
+    bottom: 33px;
+    letter-spacing: 1.2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+nav {
+    width: 443px;
+    height: 77px;
+    position: relative;
+    top: 23px;
+    left: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+nav a:hover {
+    color: #FAFAFA;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #F1CDB3;
+}
+
+.active {
+    color: #FAFAFA;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #F1CDB3;
+}
+
+#main {
+    background: url(/assets/images/start-screen-background.jpg) no-repeat;
+}
+
+#notOnly {
+    height: 908px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    left: 37px;
+}
+
+#notOnly h2 {
+    text-align: left;
+    width: 310px;
+    height: 114px;
+    margin-bottom: 42px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+#notOnly p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    width: 460px;
+    height: 72px;
+    text-align: left;
+    margin: 0;
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+#notOnly button {
+    padding: 15px 45px;
+    border: none;
+    position: relative;
+    width: 208px;
+    height: 52px;
+    left: calc(50% - 207px/2 - 537.5px);
+    bottom: -42px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    letter-spacing: 0.06em;
+    background: #F1CDB3;
+    border-radius: 100px;
+}
+
+#main-image {
+    position: relative;
+    left: 507px;
+    bottom: 442px;
+    width: 698px;
+    height: 728px;
+}
