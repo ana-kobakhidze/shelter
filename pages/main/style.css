@@ -125,14 +125,13 @@ nav a:hover {
     color: #CDCDCD;
 }
 
-#notOnly button {
-    padding: 15px 45px;
-    border: none;
+#notOnly a {
+    padding: 15px 1px;
     position: relative;
     width: 208px;
-    height: 52px;
     left: calc(50% - 207px/2 - 537.5px);
-    bottom: -42px;
+    top: 42px;
+    text-decoration: none;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -142,6 +141,10 @@ nav a:hover {
     letter-spacing: 0.06em;
     background: #F1CDB3;
     border-radius: 100px;
+}
+
+#notOnly a:hover {
+    background: #FDDCC4;
 }
 
 #main-image {
@@ -278,8 +281,8 @@ nav a:hover {
 
 #pets ul {
     display: flex;
-    justify-content: space-evenly;
-    width: 1175px;
+    justify-content: space-between;
+    width: 993px;
     position: relative;
     bottom: 119px;
     left: 3px;
@@ -348,6 +351,10 @@ nav a:hover {
     left: 2px;
     color: #292929;
     padding: 15px 45px;
+}
+
+#pets a:hover {
+    background: #FDDCC4;
 }
 
 #help {
@@ -503,6 +510,12 @@ nav a:hover {
     height: 43px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+#credit-card:hover {
+    background: #FDDCC4;
+    cursor: pointer;
 }
 
 #credit-card h4 {
@@ -563,6 +576,7 @@ nav a:hover {
     bottom: 16px;
     right: 51px;
     width: 217px;
+    text-decoration: none;
     padding: 0;
     justify-content: space-between;
 }
@@ -574,6 +588,7 @@ nav a:hover {
     right: 51px;
     width: 222px;
     padding: 0;
+    text-decoration: none;
     justify-content: space-between;
 }
 
@@ -627,12 +642,14 @@ nav a:hover {
     display: flex;
     position: relative;
     bottom: 8px;
+    text-decoration: none;
 }
 
 #second-pin {
     display: flex;
     position: relative;
     bottom: 23px;
+    text-decoration: none;
 }
 
 #second-col h4 {
