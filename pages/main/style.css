@@ -16,7 +16,7 @@ header {
     width: 1200px;
     height: 60px;
     position: relative;
-    left: calc(50% - 1204px/2);
+    left: calc(50% - 1202px/2);
     top: 40px;
 }
 
@@ -39,8 +39,9 @@ header h5 {
     font-family: 'ARIAL', sans-serif;
     position: relative;
     padding: 0;
-    bottom: 33px;
-    letter-spacing: 1.2px;
+    left: 2px;
+    bottom: 35px;
+    letter-spacing: 1.4px;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -52,8 +53,8 @@ nav {
     width: 443px;
     height: 77px;
     position: relative;
-    top: 23px;
-    left: 2px;
+    top: 21px;
+    left: 5px;
 }
 
 nav ul {
@@ -86,16 +87,16 @@ nav a:hover {
 }
 
 #main {
-    background: url(/assets/images/start-screen-background.jpg) no-repeat;
+    background: url("../../assets/images/start-screen-background.jpg") no-repeat;
 }
 
 #notOnly {
-    height: 908px;
+    height: 852px;
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 250px;
-    left: 37px;
+    top: 249px;
+    left: 40px;
 }
 
 #notOnly h2 {
@@ -146,7 +147,511 @@ nav a:hover {
 #main-image {
     position: relative;
     left: 507px;
-    bottom: 442px;
+    bottom: 443px;
     width: 698px;
     height: 728px;
+}
+
+#about {
+    Width: 1280px;
+    Height: 588px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 5px;
+}
+
+#pets-image {
+    width: 300px;
+    height: 408px;
+    position: relative;
+    right: 58px;
+    top: 83px;
+}
+
+#right-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 63px;
+    justify-content: center;
+}
+
+#right-block h3 {
+    width: 336px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+    line-height: 130%;
+    color: #545454;
+    position: relative;
+    bottom: 4px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+#right-block p {
+    position: relative;
+    top: 5px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    width: 430px;
+    line-height: 160%;
+    color: #4C4C4C;
+}
+
+#pets {
+    Width: 1280px;
+    Height: 877px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+}
+
+#pets h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    width: 400px;
+    height: 90px;
+    color: #545454;
+    position: relative;
+    top: 34px;
+    left: 4px;
+}
+
+.right-arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    position: relative;
+    left: 580px;
+    padding: 13px;
+    top: 230px;
+    cursor: pointer;
+}
+
+.right-arrow:hover {
+    background: #FDDCC4;
+}
+
+.right-arrow img {
+    cursor: pointer;
+}
+
+.left-arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    position: relative;
+    right: 573px;
+    padding: 13px;
+    top: 153px;
+}
+
+.left-arrow:hover {
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+.left-arrow img {
+    cursor: pointer;
+}
+
+#pets ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1175px;
+    position: relative;
+    bottom: 119px;
+    left: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+#pets ul li {
+    Width: 270px;
+    Height: 435px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+#pets ul li:hover {
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+#pets ul li h5 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+    letter-spacing: 0.06em;
+}
+
+#pets ul li button {
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: #FAFAFA;
+    width: 187px;
+    height: 52px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+#pets ul li button:hover {
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+#pets a {
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    position: relative;
+    bottom: 82px;
+    text-decoration: none;
+    left: 2px;
+    color: #292929;
+    padding: 15px 45px;
+}
+
+#help {
+    Width: 1280px;
+    Height: 611px;
+    background: #FFFFFF;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#help img {
+    width: 60px;
+    height: 60px;
+}
+
+#help h3 {
+    width: 310px;
+    height: 90px;
+    position: relative;
+    top: 59px;
+    left: 2px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+#first-row {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    left: 2px;
+    width: 1031px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#first-row li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-row p {
+    position: relative;
+    top: 11px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+#second-row {
+    display: flex;
+    position: relative;
+    bottom: 59px;
+    left: 2px;
+    width: 866px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#second-row li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-row p {
+    position: relative;
+    top: 10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+#in-addition {
+    Width: 1280px;
+    Height: 462px;
+    background: #F6F6F6;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#in-addition img {
+    position: relative;
+    top: 13px;
+    right: 13px;
+    width: 505px;
+    height: 261px;
+}
+
+#info {
+    position: relative;
+    bottom: 24px;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+#info h3 {
+    position: relative;
+    top: 18px;
+    width: 300px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+}
+
+#info h5 {
+    position: relative;
+    top: 2px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin: 0;
+}
+
+#credit-card {
+    position: relative;
+    top: 24px;
+    display: flex;
+    background: #F1CDB3;
+    border-radius: 9px;
+    width: 349px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+#credit-card h4 {
+    position: relative;
+    left: 8px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+#credit-card img {
+    position: relative;
+    top: 0;
+    right: 7px;
+    width: 30px;
+    height: 23px;
+}
+
+#info p {
+    position: relative;
+    top: 32px;
+    width: 380px;
+    height: 72px;
+    text-align: left;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#footer {
+    background: url(../../assets/images/footer-gradient-background.png);
+    Width: 1280px;
+    Height: 350px;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#first-col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 15px;
+    width: 239px;
+    justify-content: space-around;
+}
+
+#footer-first-row {
+    display: flex;
+    position: relative;
+    bottom: 16px;
+    right: 51px;
+    width: 217px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#footer-second-row {
+    display: flex;
+    position: relative;
+    bottom: 31px;
+    right: 51px;
+    width: 222px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#first-header {
+    position: relative;
+    right: 50px;
+    top: 12px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-align: left;
+    width: 300px;
+}
+
+#first-col h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    position: relative;
+    left: 20px;
+}
+
+#second-col {
+    text-align: left;
+    position: relative;
+    left: 32px;
+}
+
+#second-header {
+    position: relative;
+    top: 20px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+#first-pin {
+    display: flex;
+    position: relative;
+    bottom: 8px;
+}
+
+#second-pin {
+    display: flex;
+    position: relative;
+    bottom: 23px;
+}
+
+#second-col h4 {
+    position: relative;
+    left: 21px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    width: 300px;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+#footer-puppy {
+    position: relative;
+    top: 40px;
+    left: 69px;
+    width: 300px;
+    height: 310px;
 }
