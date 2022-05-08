@@ -331,7 +331,7 @@ nav a:hover {
     color: #292929;
 }
 
-#pets ul li button:hover {
+#pets ul li:hover>button {
     background: #FDDCC4;
     cursor: pointer;
 }
