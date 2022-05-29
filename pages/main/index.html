@@ -2,33 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
     <div id="main">
-        <header>
-            <div id="logo">
-                <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
-                    <h1>Cozy House</h1>
-                    <h5>Shelter for pets in Boston</h5>
-                </a>
-            </div>
+        <header id="header">
             <nav>
-                <ul>
-                    <li>
+                    <div id="logo" class="topcol1">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
+                            <h1>Cozy House</h1>
+                            <h5>Shelter for pets in Boston</h5>
+                        </a>
+                    </div>
+                    <div id="menu-icon" class="topcol2" >
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                    <ul id="icon" class="topcol3">
+                    <li class="list item1">
                         <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#about">About the shelter</a>
                     </li>
-                    <li>
+                    <li class="list item2">
                         <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
                     </li>
-                    <li>
+                    <li class="list item3">
                         <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#help">Help the shelter</a>
                     </li>
-                    <li>
+                    <li class="list item4">
                         <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#footer">Contacts</a>
                     </li>
                 </ul>
@@ -41,6 +46,7 @@
             <a href="#pets">Make a friend</a>
             <img id="main-image" src="../../assets/images/start-screen-puppy.png">
         </div>
+
         <div id="about">
             <img id="pets-image" src="../../assets/images/about-pets.png" alt="cat&dog">
             <div id="right-block">
@@ -53,26 +59,28 @@
         <div id="pets">
             <h3>Our friends who <br> are looking for a house</h3>
 
-            <span class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
-            <span class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
-
-            <ul>
+           
+<div id="petsItem2">
+    <span class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
+    <span class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
+            <ul id="card-list">
                 <li>
                     <img src="../../assets/images/pets-katrine.png" alt="Katrine">
                     <h5>Katrine</h5>
                     <button>Learn More</button>
                 </li>
-                <li>
+                <li class="hiddenItemMobile">
                     <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
                     <h5>Jennifer</h5>
                     <button>Learn More</button>
                 </li>
-                <li>
+                <li class="hiddenItem">
                     <img src="../../assets/images/pets-woody.png" alt="Woody">
                     <h5>Woody</h5>
                     <button>Learn More</button>
                 </li>
             </ul>
+        </div>
             <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Get to know the rest</a>
         </div>
         <div id="help">
@@ -98,8 +106,6 @@
                     <img src="../../assets/icons/shampoos.svg" alt="Shampoos-icon">
                     <p>Shampoos</p>
                 </li>
-            </ul>
-            <ul id="second-row">
                 <li>
                     <img src="../../assets/icons/vitamins.svg" alt="Vitamins-icon">
                     <p>Vitamins</p>
@@ -119,7 +125,7 @@
             </ul>
         </div>
         <div id="in-addition">
-            <img src="../../assets/images/donation-dog.png" alt="donation-dog">
+            <img id="puppyimg" src="../../assets/images/donation-dog.png" alt="donation-dog">
             <div id="info">
                 <h3>You can also make a donation</h3>
                 <h5>Name of the bank / Type of bank account</h5>
@@ -162,6 +168,7 @@
         </footer>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
