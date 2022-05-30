@@ -22,7 +22,9 @@ body {
 #logo a {
   text-decoration: none;
 }
-
+#header{
+    height: 174px;
+}
 header h1 {
   font-family: "Georgia", serif;
   font-style: normal;
@@ -65,7 +67,7 @@ nav a {
   color: #cdcdcd;
 }
 
-nav a:hover {
+#icon a:hover {
   color: #fafafa;
   padding-bottom: 3px;
   border-bottom: 2px solid #f1cdb3;
@@ -646,6 +648,9 @@ nav a:hover {
   #main {
     background-size: 768px 1165px;
   }
+  #header{
+    height: 114px;
+}
   .topcol1 {
     padding: 0 0 0 30px;
     flex: 4;
@@ -775,8 +780,11 @@ nav a:hover {
     padding-right: 20px;
     margin-top: 45px;
   }
+  #header{
+    height: 91px;
+}
   .topcol1 {
-    padding: 0 0 0 9px;
+    padding: 0 0 0 14px;
   }
   header h5 {
     margin: 0;
@@ -957,6 +965,9 @@ nav a:hover {
     width: 278px;
     text-align: justify;
     margin: 10px;
+  }
+  #info img{
+    right: 213px;
   }
   #puppyimg {
     width: 260px;
