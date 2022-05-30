@@ -8,7 +8,8 @@ menu.addEventListener("click", function () {
   if (icon.style.display === "") {
     icon.style.display = "flex";
     icon.style.flex = "1";
-    icon.style.paddingTop = "88px";
+    icon.style.marginTop = "157px";
+    icon.style.paddingLeft = "32px";
     icon.style.flexDirection = "column";
     icon.style.height = "415px";
     icon.style.alignItems = "center";

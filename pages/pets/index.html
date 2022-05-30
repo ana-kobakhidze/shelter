@@ -6,19 +6,24 @@
     <meta charset="UTF-8">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+   
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <div id="pets-logo">
             <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
                 <h1>Cozy House</h1>
                 <h5>Shelter for pets in Boston</h5>
             </a>
         </div>
-        <nav>
+        <div id="menu-icon" class="topcol2" >
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+        <nav id="nav">
             <ul>
                 <li>
                     <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">About the shelter</a>
@@ -37,7 +42,7 @@
     </header>
     <div id="pets-block">
         <h3>Our friends who <br> are looking for a house</h3>
-        <ul>
+        <ul id="listCard">
             <li>
                 <img src="../../assets/images/pets-katrine.png" alt="Katrine">
                 <h5>Katrine</h5>
@@ -53,27 +58,27 @@
                 <h5>Woody</h5>
                 <button>Learn More</button>
             </li>
-            <li>
+            <li class="hiddenSecond">
                 <img src="../../assets/images/pets-sophia.png" alt="Woody">
                 <h5>Sophia</h5>
                 <button>Learn More</button>
             </li>
-            <li>
+            <li class="hiddenSecond">
                 <img src="../../assets/images/pets-timmy.png" alt="Woody">
                 <h5>Timmy</h5>
                 <button>Learn More</button>
             </li>
-            <li>
+            <li class="hiddenSecond">
                 <img src="../../assets/images/pets-charly.png" alt="Woody">
                 <h5>Charly</h5>
                 <button>Learn More</button>
             </li>
-            <li>
+            <li class="hidden">
                 <img src="../../assets/images/pets-scarlet.png" alt="Woody">
                 <h5>Scarlet</h5>
                 <button>Learn More</button>
             </li>
-            <li>
+            <li class="hidden">
                 <img src="../../assets/images/pets-Freddie.png" alt="Woody">
                 <h5>Freddie</h5>
                 <button>Learn More</button>
@@ -115,6 +120,7 @@
         <img id="footer-puppy" src="../../assets/images/footer-puppy.png" alt="puppy">
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 
