@@ -518,4 +518,7 @@ nav a:hover {
   #second-pin{
     bottom: 0;
   }
+  #footer-puppy{
+      top: 16px;
+  }
 }
