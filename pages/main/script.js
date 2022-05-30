@@ -1,25 +1,25 @@
 const icon = document.getElementById("icon");
 const menu = document.getElementById("menu-icon");
-const header = document.getElementById("header")
+const header = document.getElementById("header");
 
-menu.addEventListener("click", function(){
-    console.log(icon.style.display === "")
-    if( icon.style.display === "" ){
-     icon.style.display = "flex";
-     icon.style.flex = "1";
-     icon.style.paddingTop = "88px";
+
+menu.addEventListener("click", function () {
+
+  if (icon.style.display === "") {
+    icon.style.display = "flex";
+    icon.style.flex = "1";
+    icon.style.paddingTop = "88px";
     icon.style.flexDirection = "column";
     icon.style.height = "415px";
-    menu.style.transformOrigin = "50% 50%";
-    menu.style.transform =  "rotate(-0.25turn)";
+    icon.style.alignItems = "center";
+    menu.style.transform = " translateX(-15%) translateY(-15%) rotate(90deg)";
+    header.style.height = "100vh";
     header.style.backgroundColor = "#292929";
-    header.style.height = "100hv";
-}else{
+  } else {
     icon.style.display = "";
+    header.style.height = "";
     header.style.backgroundColor = "";
-    menu.style.transformOrigin = "50% 50%";
+
     menu.style.transform = "rotate(0)";
-
-}
-
-})
+  }
+});
