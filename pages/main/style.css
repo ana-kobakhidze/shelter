@@ -51,13 +51,13 @@ nav {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  align-items: center;
+  align-items: flex-start;
 }
-nav ul {
+#navLinks {
   list-style: none;
 }
 
-nav a {
+#navLinks a {
   text-decoration: none;
   font-family: "Arial";
   font-style: normal;
@@ -67,7 +67,7 @@ nav a {
   color: #cdcdcd;
 }
 
-#icon a:hover {
+#navLinks a:hover {
   color: #fafafa;
   padding-bottom: 3px;
   border-bottom: 2px solid #f1cdb3;
@@ -85,13 +85,65 @@ nav a {
   padding: 0;
   padding-left: 71px;
   padding-right: 41px;
+  margin-top: 77px;
   display: flex;
   justify-content: space-between;
 }
-
-#menu-icon {
-  display: none;
+/* hidden side bar*/
+#sideBar{
+  display: flex;
+  flex-direction: column;
+  background-color: #292929;
+  transition: all 1s ease-in-out;
+  width: 320px;
+  z-index:2;
+  position: absolute;
+  height: 100vh;
+  right: -320px;
 }
+
+#sideBar-logo{
+  display: none;
+  padding-left: 17px;
+}
+
+#sideBar-icon {
+  display: none;
+  z-index:3;
+}
+#sideBar-links{
+  display: none;
+  justify-content: center;
+  margin-top: 41px;
+}
+.hiddenScroll {
+  overflow: -moz-scrollbars-horizontal;
+  overflow-y: hidden;
+  overflow-x: auto;
+  }
+  #sideBar-links ul{
+    list-style: none;
+    padding:0;
+  }
+  #sideBar-links li{
+    margin-top: 30px;
+  }
+  #sideBar-links a{
+    color: #cdcdcd;
+  }
+  .menu-overlay{
+    background-color: #211F20;
+    margin: 0;
+cursor:pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 90%;
+    position: absolute;
+    transition: 0.5s;
+    top:0;
+  }
+/* ------------------ */
 .lines {
   width: 35px;
   height: 5px;
@@ -641,7 +693,7 @@ nav a {
   height: 310px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   body {
     width: 768px;
   }
@@ -651,20 +703,62 @@ nav a {
   #header{
     height: 114px;
 }
-  .topcol1 {
-    padding: 0 0 0 30px;
-    flex: 4;
-  }
-  .topcol3 {
-    flex: 6;
-    padding-left: 0;
-    padding-right: 32px;
-  }
-  header h5 {
-    margin-top: 0;
-  }
-  /* notonly block flex container */
+
+#sideBar-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 14px;
+  margin-top: 45px;
+  margin-left: 413px;
+  justify-content: center;
+}
+
+#header{
+  height: 91px;
+}
+.topcol1 {
+  padding: 0 0 0 28px;
+}
+header h5 {
+  margin: 0;
+  line-height: 19px;
+}
+.topcol2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 39px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.topcol3 {
+  display: none;
+}
+nav a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.lines {
+  width: 28px;
+  height: 2px;
+  background-color: #f1cdb3;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
   #notOnly {
+    margin-top: 23px;
     flex-wrap: nowrap;
     align-items: center;
     height: 1049px;
@@ -772,52 +866,13 @@ nav a {
     width: 320px;
   }
 
-  #menu-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    padding-right: 20px;
-    margin-top: 45px;
+  #sideBar-icon {
+    margin-top: -44px;
+    margin-left: 196px;
   }
-  #header{
-    height: 91px;
+.topcol1{
+  padding: 0 0 0 10px;
 }
-  .topcol1 {
-    padding: 0 0 0 14px;
-  }
-  header h5 {
-    margin: 0;
-    line-height: 19px;
-  }
-  .topcol2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 39px;
-    padding-right: 30px;
-    cursor: pointer;
-  }
-  .topcol3 {
-    display: none;
-  }
-  nav a {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 160%;
-    display: flex;
-    text-decoration: none;
-    flex-direction: column;
-  }
-  .lines {
-    width: 28px;
-    height: 2px;
-    background-color: #f1cdb3;
-    border-radius: 10px;
-    margin-bottom: 8px;
-  }
   #notOnly {
     width: 320px;
     height: 708px;
