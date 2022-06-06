@@ -227,8 +227,16 @@ const paginationHandler = (pagOpt) => {
   createAndPopulatePetCards(paging.currentPageData);
 }
 
+const removeListChildren = () => {
+  const list = document.getElementById("listCard");
+  while (list.hasChildNodes()) {
+    list.removeChild(list.firstChild);
+  }
+}
+
 const createAndPopulatePetCards = (currentPageData) => {
   const ul = document.getElementById("listCard");
+  removeListChildren();
   currentPageData.forEach(petObj => {
     const li = document.createElement("li");
     li.addEventListener('click', ()=>{
