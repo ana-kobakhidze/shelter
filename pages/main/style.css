@@ -17,6 +17,7 @@ body {
 
 #main {
   background: url("../../assets/images/start-screen-background.jpg") no-repeat;
+  max-width: 1280px;
 }
 
 #logo a {
@@ -89,7 +90,7 @@ nav {
 }
 /* hidden side bar*/
 #sideBar{
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #292929;
   transition: all 1s ease-in-out;
@@ -705,6 +706,8 @@ cursor:pointer;
   }
   #main {
     background-size: 768px 1165px;
+      max-width: 768px;
+
   }
   #header{
     height: 114px;
