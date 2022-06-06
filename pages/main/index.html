@@ -2,41 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="../modal/style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
     <div id="main">
-        <header>
-            <div id="logo">
-                <h1>Cozy House</h1>
-                <h5>Shelter for pets in Boston</h5>
-            </div>
+        <header id="header">
             <nav>
-                <ul>
-                    <li>
-                        <a class="active" href="#">About the shelter</a>
+                    <div id="logo" class="topcol1">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
+                            <h1>Cozy House</h1>
+                            <h5>Shelter for pets in Boston</h5>
+                        </a>
+                    </div>
+                    <div id="sideBar-icon" class="topcol2" >
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                    <div id="sideBar">
+                    <div id="sideBar-logo">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
+                            <h1>Cozy House</h1>
+                            <h5>Shelter for pets in Boston</h5>
+                        </a>
+                    </div>
+                    <div id="sideBar-links">
+                    <ul>
+                        <li class="list item1">
+                            <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#about">About the shelter</a>
+                        </li>
+                        <li class="list item2">
+                            <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
+                        </li>
+                        <li class="list item3">
+                            <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#help">Help the shelter</a>
+                        </li>
+                        <li class="list item4">
+                            <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#footer">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+                    <ul id="navLinks" class="topcol3">
+                    <li class="list item1">
+                        <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#about">About the shelter</a>
                     </li>
-                    <li>
-                        <a href="#">Our pets</a>
+                    <li class="list item2">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
                     </li>
-                    <li>
-                        <a href="#">Help the shelter</a>
+                    <li class="list item3">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#help">Help the shelter</a>
                     </li>
-                    <li>
-                        <a href="#">Contacts</a>
+                    <li class="list item4">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#footer">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <div id="notOnly">
-            <h2>Not only people need a house</h2>
+            <div id="notOnly-textarea">
+            <h2>Not only people<br> need a house</h2>
             <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-            <button>Make a friend</button>
+            <a href="#pets">Make a friend</a>
+            </div>
             <img id="main-image" src="../../assets/images/start-screen-puppy.png">
         </div>
         <div id="about">
@@ -49,29 +83,34 @@
             </div>
         </div>
         <div id="pets">
-            <h3>Our friends who <br> are looking for a house</h3>
+          <h3>Our friends who <br> are looking for a house</h3>
+          <div id="petsItem2">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div id="pet-details">
+                  <img id="pet-image">
+                  <div id="modal-info">
+                  <p id="pet-name"></p>
+                  <p id="pet-breed"></p>
+                  <p id="pet-description"></p>
+                  <ul id="info-list">
+                  <li id="pet-age"></li>
+                  <li id="pet-inoculations"></li>
+                  <li id="pet-diseases"></li>
+                  <li id="parasites"></li>
+                </ul>
+                </div>
+                </div>
+            </div>
+             </div>
 
-            <span class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
-            <span class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
-
-            <ul>
-                <li>
-                    <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                    <h5>Katrine</h5>
-                    <button>Learn More</button>
-                </li>
-                <li>
-                    <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                    <h5>Jennifer</h5>
-                    <button>Learn More</button>
-                </li>
-                <li>
-                    <img src="../../assets/images/pets-woody.png" alt="Woody">
-                    <h5>Woody</h5>
-                    <button>Learn More</button>
-                </li>
+    <span id="moveRight" class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
+    <span id="moveLeft" class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
+            <ul id="card-list">
             </ul>
-            <a href="#">Get to know the rest</a>
+        </div>
+            <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Get to know the rest</a>
         </div>
         <div id="help">
             <h3>How you can help<br>our shelter</h3>
@@ -96,8 +135,6 @@
                     <img src="../../assets/icons/shampoos.svg" alt="Shampoos-icon">
                     <p>Shampoos</p>
                 </li>
-            </ul>
-            <ul id="second-row">
                 <li>
                     <img src="../../assets/icons/vitamins.svg" alt="Vitamins-icon">
                     <p>Vitamins</p>
@@ -117,14 +154,14 @@
             </ul>
         </div>
         <div id="in-addition">
-            <img src="../../assets/images/donation-dog.png" alt="donation-dog">
+            <img id="puppyimg" src="../../assets/images/donation-dog.png" alt="donation-dog">
             <div id="info">
                 <h3>You can also make a donation</h3>
                 <h5>Name of the bank / Type of bank account</h5>
-                <div id="credit-card">
+                <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#notOnly" id="credit-card">
                     <img src="../../assets/icons/credit-card.svg" alt="credit-card">
                     <h4>8380 2880 8028 8791 7435</h4>
-                </div>
+                </a>
                 <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in
                     faucibus.
                 </p>
@@ -134,32 +171,31 @@
         <footer id="footer">
             <div id="first-col">
                 <h3 id="first-header">For questions and suggestions</h3>
-                <div id="footer-first-row">
+                <a href="mailto:test@test.com" id="footer-first-row">
                     <img src="../../assets/icons/mail.svg" alt="mail-icon">
                     <h4>email@shelter.com</h4>
-                </div>
-                <div id="footer-second-row">
-                    <img src="../../assets/icons/phone.svg" alt="phone-icon">
+                </a>
+                <a href="tel:+136745677554" id="footer-second-row">
+                    <img src="../../assets/icons/phone.svg " alt="phone-icon ">
                     <h4>+13 674 567 75 54</h4>
-                </div>
-
+                </a>
             </div>
             <div id="second-col">
                 <h3 id="second-header">We are waiting for your visit</h3>
-                <div id="first-pin">
+                <a href="https://goo.gl/maps/izc9oMzQBYgoMtQ8A" id="first-pin" target="_blank">
                     <img src="../../assets/icons/pin.svg" alt="pin-icon">
                     <h4>1 Central Street, Boston (entrance from the store)</h4>
-                </div>
-                <div id="second-pin">
+                </a>
+                <a href="https://goo.gl/maps/te8WfHMeorqpXWc86" id="second-pin" target="_blank">
                     <img src="../../assets/icons/pin.svg" alt="pin-icon">
-                    <h4>18 South Park, London </h4>
-                </div>
+                    <h4>18 South Park, London</h4>
+                </a>
             </div>
             <img id="footer-puppy" src="../../assets/images/footer-puppy.png" alt="puppy">
-
         </footer>
-
     </div>
+    <script src="../modal/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

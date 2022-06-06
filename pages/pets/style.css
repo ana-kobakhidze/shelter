@@ -1,0 +1,622 @@
+@font-face {
+  font-family: "Georgia", "ARIAL";
+  src: url("/assets/fonts/Georgia.ttf"), url("/assets/fonts/ARIAL.TTF");
+}
+*{
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background: black;
+  text-align: center;
+  margin: auto;
+  max-width: 1280px;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ffffff;
+  height: 135px;
+}
+#pets-logo {
+  flex: 1;
+  padding-left: 41px;
+  padding-bottom: 21px;
+}
+
+
+
+
+header h1 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+}
+
+header h5 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  text-align: left;
+  margin: 0;
+  margin-top: 8px;
+}
+
+nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#navLinks a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #545454;
+}
+
+#navLinks a:hover {
+  color: #fafafa;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #f1cdb3;
+}
+.topcol1 {
+  flex: 3 7;
+  text-align: left;
+  padding: 29px 22px 22px 42px;
+}
+.topcol2 {
+  flex: 2;
+}
+.topcol3 {
+  flex: 3 2 2px;
+  padding: 0;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.active {
+  color: #292929;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #f1cdb3;
+}
+.lines {
+  width: 35px;
+  height: 5px;
+  background-color: #f1cdb3;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* hidden side bar*/
+#sideBar{
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;;
+  transition: all 1s ease-in-out;
+  width: 320px;
+  z-index:2;
+  position: absolute;
+  height: 100vh;
+  right: -320px;
+}
+
+#sideBar-logo{
+  display: none;
+  margin-top: 31px;
+  padding-left: 17px;
+}
+
+#sideBar-icon {
+  display: none;
+  z-index:3;
+}
+#sideBar-links{
+  display: none;
+  justify-content: center;
+  margin-top: 41px;
+}
+.hiddenScroll {
+  overflow: -moz-scrollbars-horizontal;
+  overflow-y: hidden;
+  overflow-x: auto;
+  }
+  #sideBar-links ul{
+    list-style: none;
+    padding:0;
+  }
+  #sideBar-links li{
+    margin-top: 30px;
+  }
+  #sideBar-links a{
+    color: #545454;
+  }
+  .menu-overlay{
+    background-color: #211F20;
+    margin: 0;
+cursor:pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 90%;
+    position: absolute;
+    transition: 0.5s;
+    top:0;
+  }
+/* ------------------ */
+/* pets block flex container */
+#pets-block {
+  max-width: 1280px;
+  background: #f6f6f6;
+  margin: 0;
+  position: relative;
+  bottom: 16px;
+}
+
+#pets-block-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  color: #545454;
+  position: relative;
+  top: 83px;
+  margin: 0;
+}
+
+#listCard {
+  display: flex;
+  position: relative;
+  top: 141px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 31px;
+}
+
+#listCard li {
+  width: 270px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  align-items: center;
+  background: #fafafa;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#listCard li:hover {
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#listCard h5 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
+#listCard button {
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: #fafafa;
+  width: 187px;
+  height: 52px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+#listCard li:hover > button {
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+#page-counter {
+  padding: 199px 0 104px 0;
+}
+
+#page-counter button {
+  width: 52px;
+  position: relative;
+  left: 7px;
+  height: 52px;
+  margin-right: 16px;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+#listCard .hidden {
+  display: flex;
+}
+.disabled {
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+  background: #f6f6f6;
+}
+
+.counter {
+  background: #f1cdb3;
+  border: none;
+}
+
+.enabled {
+  border: 2px solid #f1cdb3;
+  color: #292929;
+  background: #f6f6f6;
+}
+
+.enabled:hover {
+  background: #fddcc4;
+  cursor: pointer;
+}
+
+#footer {
+  background: url(../../assets/images/footer-gradient-background.png);
+  width: 1280px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#first-col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 15px;
+  width: 239px;
+  justify-content: space-around;
+}
+
+#footer-first-row {
+  display: flex;
+  position: relative;
+  bottom: 16px;
+  right: 51px;
+  width: 217px;
+  text-decoration: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+#footer-second-row {
+  display: flex;
+  position: relative;
+  bottom: 31px;
+  right: 51px;
+  width: 222px;
+  padding: 0;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+#first-header {
+  position: relative;
+  right: 50px;
+  top: 12px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: left;
+  width: 300px;
+}
+
+#first-col h4 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  position: relative;
+  left: 20px;
+}
+
+#second-col {
+  text-align: left;
+  position: relative;
+  left: 32px;
+}
+
+#second-header {
+  position: relative;
+  top: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 300px;
+}
+
+#first-pin {
+  display: flex;
+  position: relative;
+  bottom: 8px;
+  text-decoration: none;
+}
+
+#second-pin {
+  display: flex;
+  position: relative;
+  bottom: 23px;
+  text-decoration: none;
+}
+
+#second-col h4 {
+  position: relative;
+  left: 21px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  width: 300px;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+
+#footer-puppy {
+  position: relative;
+  top: 40px;
+  left: 69px;
+  width: 300px;
+  height: 310px;
+}
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  #main {
+    background-size: 768px 1165px;
+  }
+  #header{
+    height: 135px;
+  }
+#navLinks {
+  display:none;
+
+}
+#sideBar-icon {
+  flex:1 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 14px;
+  margin-top: 45px;
+  /* margin-left: 413px; */
+  justify-content: center;
+}
+
+
+.topcol1 {
+  flex-shrink: 2;
+  flex-grow: 8;
+  padding: 30px 0 0 40px;
+}
+
+
+
+header h5 {
+  margin: 0;
+  line-height: 19px;
+  margin-top: 7px;
+}
+.topcol2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 39px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.topcol3 {
+  display: none;
+}
+nav a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.lines {
+  width: 28px;
+  height: 2px;
+  background-color: #545454;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+  #pets-block {
+    max-width: 768px;
+  }
+
+  #listCard {
+    padding-top: 102px;
+    top: 0;
+    justify-content: center;
+    row-gap: 31px;
+    column-gap: 38px;
+  }
+  #listCard .hidden {
+    display: none;
+  }
+  #page-counter {
+    padding: 45px 0 75px 0;
+  }
+  #footer {
+    width: 768px;
+    height: 643px;
+    flex-wrap: wrap;
+    background-size: cover;
+    justify-content: center;
+  }
+  #footer-puppy {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  #footer-second-row {
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    width: 222px;
+    padding: 0;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  #first-header {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0;
+  }
+  #footer-first-row {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  #first-col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 41px;
+    bottom: 12px;
+    width: 239px;
+    justify-content: space-evenly;
+  }
+  #first-col h4 {
+    margin: 0;
+  }
+  #second-header {
+    margin: 0;
+    top: 0;
+  }
+  #second-col {
+    margin: 0;
+    margin-top: 33px;
+    left: 58px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+  /* header {
+    max-width: 320px;
+    flex-wrap: wrap;
+  } */
+  .topcol1{
+    padding: 30px 0 0 10px;
+  }
+  #pets-logo {
+    padding-left: 10px;
+    padding-bottom: 14px;
+  }
+
+  #pets-block {
+    max-width: 320px;
+    height: 1650px;
+  }
+  #pets-block h3 {
+    font-size: 25px;
+    line-height: 130%;
+    top: 0;
+    padding-top: 41px;
+    letter-spacing: 0.06em;
+  }
+  #pets-block .hiddenSecond {
+    display: none;
+  }
+  #listCard {
+    padding-top: 38px;
+  }
+  #page-counter button {
+    margin-right: 6px;
+    left: 0;
+  }
+  #footer {
+    max-width: 320px;
+    height: 863px;
+  }
+  #footer h3 {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 250px;
+    padding-left: 20px;
+  }
+  #first-col {
+    align-items: center;
+    right: 0;
+    row-gap: 42px;
+    padding-right: 30px;
+    bottom: 0;
+    padding-top: 22px;
+  }
+  #second-col {
+    left: 12px;
+  }
+  #first-pin{
+    top: 10px;
+    bottom: 0;
+  }
+  #second-pin{
+    bottom: 0;
+  }
+  #footer-puppy{
+top:16px;
+  }
+}
