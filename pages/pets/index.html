@@ -1,98 +1,97 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Shelter</title>
+    <link rel="stylesheet" href="../modal/style.css">
     <link rel="stylesheet" href="style.css">
-   
 </head>
 
 <body>
-
     <header id="header">
-        <div id="pets-logo">
-            <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
-                <h1>Cozy House</h1>
-                <h5>Shelter for pets in Boston</h5>
-            </a>
-        </div>
-        <div id="menu-icon" class="topcol2" >
-            <div class="lines"></div>
-            <div class="lines"></div>
-            <div class="lines"></div>
-        </div>
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">About the shelter</a>
+        <nav>
+                <div id="logo" class="topcol1">
+                    <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
+                        <h1>Cozy House</h1>
+                        <h5>Shelter for pets in Boston</h5>
+                    </a>
+                </div>
+                <div id="sideBar-icon" class="topcol2" >
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+                <div id="sideBar">
+                <div id="sideBar-logo">
+                    <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html">
+                        <h1>Cozy House</h1>
+                        <h5>Shelter for pets in Boston</h5>
+                    </a>
+                </div>
+                <div id="sideBar-links">
+                <ul>
+                    <li class="list item1">
+                        <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#about">About the shelter</a>
+                    </li>
+                    <li class="list item2">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
+                    </li>
+                    <li class="list item3">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#help">Help the shelter</a>
+                    </li>
+                    <li class="list item4">
+                        <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#footer">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+                </div>
+                <ul id="navLinks" class="topcol3">
+                <li class="list item1">
+                    <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#about">About the shelter</a>
                 </li>
-                <li>
-                    <a class="active" href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
+                <li class="list item2">
+                    <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Our pets</a>
                 </li>
-                <li>
+                <li class="list item3">
                     <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#help">Help the shelter</a>
                 </li>
-                <li>
-                    <a href="#footer">Contacts</a>
+                <li class="list item4">
+                    <a href="https://ana-kobakhidze.github.io/shelter/pages/main/index.html#footer">Contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div id="pets-block">
-        <h3>Our friends who <br> are looking for a house</h3>
+        <h3 id="pets-block-title">Our friends who <br> are looking for a house</h3>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="pet-details">
+              <img id="pet-image">
+              <div id="modal-info">
+              <p id="pet-name"></p>
+              <p id="pet-breed"></p>
+              <p id="pet-description"></p>
+              <ul id="info-list">
+              <li id="pet-age"></li>
+              <li id="pet-inoculations"></li>
+              <li id="pet-diseases"></li>
+              <li id="parasites"></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+         </div>
         <ul id="listCard">
-            <li>
-                <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                <h5>Katrine</h5>
-                <button>Learn More</button>
-            </li>
-            <li>
-                <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                <h5>Jennifer</h5>
-                <button>Learn More</button>
-            </li>
-            <li>
-                <img src="../../assets/images/pets-woody.png" alt="Woody">
-                <h5>Woody</h5>
-                <button>Learn More</button>
-            </li>
-            <li class="hiddenSecond">
-                <img src="../../assets/images/pets-sophia.png" alt="Woody">
-                <h5>Sophia</h5>
-                <button>Learn More</button>
-            </li>
-            <li class="hiddenSecond">
-                <img src="../../assets/images/pets-timmy.png" alt="Woody">
-                <h5>Timmy</h5>
-                <button>Learn More</button>
-            </li>
-            <li class="hiddenSecond">
-                <img src="../../assets/images/pets-charly.png" alt="Woody">
-                <h5>Charly</h5>
-                <button>Learn More</button>
-            </li>
-            <li class="hidden">
-                <img src="../../assets/images/pets-scarlet.png" alt="Woody">
-                <h5>Scarlet</h5>
-                <button>Learn More</button>
-            </li>
-            <li class="hidden">
-                <img src="../../assets/images/pets-Freddie.png" alt="Woody">
-                <h5>Freddie</h5>
-                <button>Learn More</button>
-            </li>
         </ul>
         <div id="page-counter">
-
-            <a href="#"><button class="disabled" type="button" disabled>&lt;&lt;</button></a>
-            <a href="#"> <button class="disabled" type="button" disabled>&lt;</button></a>
-            <button class="counter" type="button">1</button>
-            <a href="#"> <button class="enabled" type="button">&gt;</button></a>
-            <a href="#"> <button class="enabled" type="button">&gt;&gt;</button></a>
+            <a href="#"><button id="firstPage" class="enabled" type="button">&lt;&lt;</button></a>
+            <a href="#"> <button id="prevPage" class="enabled" type="button">&lt;</button></a>
+            <button id="currentPage" class="counter" type="button">1</button>
+            <a href="#"> <button id="nextPage" class="enabled" type="button">&gt;</button></a>
+            <a href="#"> <button id="lastPage" class="enabled" type="button">&gt;&gt;</button></a>
         </div>
-    </div>
     <footer id="footer">
         <div id="first-col">
             <h3 id="first-header">For questions and suggestions</h3>
@@ -104,7 +103,6 @@
                 <img src="../../assets/icons/phone.svg " alt="phone-icon ">
                 <h4>+13 674 567 75 54</h4>
             </a>
-
         </div>
         <div id="second-col">
             <h3 id="second-header">We are waiting for your visit</h3>
@@ -118,10 +116,9 @@
             </a>
         </div>
         <img id="footer-puppy" src="../../assets/images/footer-puppy.png" alt="puppy">
-
     </footer>
+    <script src="../modal/script.js"></script>
     <script src="script.js"></script>
 </body>
-
 
 </html>

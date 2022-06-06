@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="../modal/style.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
     <div id="main">
-        <!-- <div id="menu-overlay"></div> -->
         <header id="header">
             <nav>
                     <div id="logo" class="topcol1">
@@ -66,12 +66,13 @@
         </header>
 
         <div id="notOnly">
-            <h2>Not only people need a house</h2>
+            <div id="notOnly-textarea">
+            <h2>Not only people<br> need a house</h2>
             <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
             <a href="#pets">Make a friend</a>
+            </div>
             <img id="main-image" src="../../assets/images/start-screen-puppy.png">
         </div>
-
         <div id="about">
             <img id="pets-image" src="../../assets/images/about-pets.png" alt="cat&dog">
             <div id="right-block">
@@ -82,28 +83,30 @@
             </div>
         </div>
         <div id="pets">
-            <h3>Our friends who <br> are looking for a house</h3>
+          <h3>Our friends who <br> are looking for a house</h3>
+          <div id="petsItem2">
+            <div id="myModal" class="modal">
+    
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="pet-details">
+                <img id="pet-image">
+                <p id="pet-name"></p>
+                <p id="pet-breed"></p>
+                <p id="pet-description"></p>
+                <ul id="info-list">
+                    <li id="pet-age"></li>
+                    <li id="pet-inoculations"></li>
+                    <li id="pet-diseases"></li>
+                    <li id="parasites"></li>
+                  </ul>
+              </div>
+           </div>
+        </div>
 
-           
-<div id="petsItem2">
-    <span class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
-    <span class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
+    <span id="moveRight" class="right-arrow"><img src="../../assets/images/Arrow.svg" alt="right-button"></span>
+    <span id="moveLeft" class="left-arrow"><img src="../../assets/images/left-arrow.svg" alt="left-button"></span>
             <ul id="card-list">
-                <li>
-                    <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                    <h5>Katrine</h5>
-                    <button>Learn More</button>
-                </li>
-                <li class="hiddenItemMobile">
-                    <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                    <h5>Jennifer</h5>
-                    <button>Learn More</button>
-                </li>
-                <li class="hiddenItem">
-                    <img src="../../assets/images/pets-woody.png" alt="Woody">
-                    <h5>Woody</h5>
-                    <button>Learn More</button>
-                </li>
             </ul>
         </div>
             <a href="https://ana-kobakhidze.github.io/shelter/pages/pets/index.html">Get to know the rest</a>
@@ -175,7 +178,6 @@
                     <img src="../../assets/icons/phone.svg " alt="phone-icon ">
                     <h4>+13 674 567 75 54</h4>
                 </a>
-
             </div>
             <div id="second-col">
                 <h3 id="second-header">We are waiting for your visit</h3>
@@ -189,10 +191,9 @@
                 </a>
             </div>
             <img id="footer-puppy" src="../../assets/images/footer-puppy.png" alt="puppy">
-
         </footer>
-
     </div>
+    <script src="../modal/script.js"></script>
     <script src="script.js"></script>
 </body>
 
