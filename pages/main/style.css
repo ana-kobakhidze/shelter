@@ -89,7 +89,7 @@ nav {
 }
 /* hidden side bar*/
 #sideBar{
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: #292929;
   transition: all 1s ease-in-out;

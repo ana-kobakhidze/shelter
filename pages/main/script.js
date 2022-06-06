@@ -9,36 +9,38 @@ const main = document.getElementById("main");
 // pets block elements
 const petImageFirst = document.getElementById("first-img");
 const petImageSecond = document.getElementById("first-img");
+
 // adding click to menu icon
 menu.addEventListener("click", function () {
   if (menu.style.display === "") {
-    menu.style.display = "flex";
+    menu.style.display = "flex"
     navLinks.style.display = "none";
     sideBarBackground.style.right = "0";
-    barLinks.style.display = "flex";
+    barLinks.style.display ="flex";
     logo.style.display = "flex";
     document.body.classList.add("hiddenScroll");
-    overlay.classList.add("menu-overlay");
+    overlay.classList.add("menu-overlay")
     main.appendChild(overlay);
     menu.style.transform = " translateX(-15%) translateY(15%) rotate(90deg)";
+
+
   } else {
     sideBarBackground.style.right = "-320px";
     menu.style.display = "";
     navLinks.style.display = "";
     document.body.classList.remove("hiddenScroll");
-    overlay.classList.remove("menu-overlay");
+    overlay.classList.remove("menu-overlay")
     menu.style.transform = "rotate(0)";
+
   }
 });
 
-///// adding click to overlay
-
-overlay.addEventListener("click", function () {
+overlay.addEventListener("click", function(){
   sideBarBackground.style.right = "-320px";
   menu.style.display = "";
   navLinks.style.display = "";
   document.body.classList.remove("hiddenScroll");
-  overlay.classList.remove("menu-overlay");
+  overlay.classList.remove("menu-overlay")
   menu.style.transform = "rotate(0)";
 });
 
