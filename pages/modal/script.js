@@ -32,7 +32,7 @@ const fillModalContent = (petObj) => {
 const showModal = (petObj) => {
   fillModalContent(petObj);
   modal.style.display = "block";
-  
+  document.body.style.overflowY = "hidden";
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
@@ -42,6 +42,7 @@ const showModal = (petObj) => {
 }
 const closeModal = () => {
     modal.style.display = "none";
+    document.body.style.overflowY = "";
 }
 
 const concatArray = (arr) => {
