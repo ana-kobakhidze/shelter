@@ -16,6 +16,8 @@ menu.addEventListener("click", function () {
     menu.style.display = "flex"
     navLinks.style.display = "none";
     sideBarBackground.style.right = "0";
+    sideBarBackground.style.display = "flex";
+    sideBarBackground.style.transition = "all 0.2s ease-in-out 0.1s";
     barLinks.style.display ="flex";
     logo.style.display = "flex";
     document.body.classList.add("hiddenScroll");
@@ -27,6 +29,7 @@ menu.addEventListener("click", function () {
   } else {
     sideBarBackground.style.right = "-320px";
     menu.style.display = "";
+    sideBarBackground.style.display = "";
     navLinks.style.display = "";
     document.body.classList.remove("hiddenScroll");
     overlay.classList.remove("menu-overlay")
